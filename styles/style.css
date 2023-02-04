@@ -62,6 +62,6 @@
   background-color: dodgerblue;
   color: white;
 }
-.pill-nav not-active:not(.active) {
+.pill-nav a.not-active:not(.active) {
     background-color: white;
 }
