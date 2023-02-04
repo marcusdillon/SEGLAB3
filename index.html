@@ -10,16 +10,16 @@
   <h1>Welcome to HOCO Online Grocery Shop!</h1>
 <!-- Tab links, each one with an onclick event associated with it -->
 <div class="tab">
-  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+  <button class="tablinks" onclick="openInfo(event, 'Client')">Personal</button>
   <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
-  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+  <button class="tablinks" onclick="openInfo(event, 'Cart')">My Cart</button>
 </div>
 
 <!-- Tab content -->
 <div id="Client" class="tabcontent">
-  <h3>Client Information</h3>
-  <p>Tell us a bit about you.</p>
-	Choose a Category:
+  <h3>Personal Information</h3>
+  <p>Please provide us with a bit of information to help us provide you with the best possible selection of items.</p>
+	Select the appropriate filters from below:
 	<form id="dietSelect" name="dietSelect">
 		<input type="checkbox" id="Vegetarian" name="Vegetarian" value="Vegetarian" onclick="populateListProductChoices('Vegetarian', 'displayProduct')">
 		<label for="Vegetarian">Vegetarian</label><br>
@@ -43,7 +43,7 @@
 		<label for="None">None</label><br>
 
 		<input type="reset" value="Reset" onclick="populateListProductChoices('', 'displayProduct')">
-		<label>Click 'Reset' if nothing is selected!</label>
+		<label>Click 'Reset' to clear all filters!</label>
     	</form>
 <!-- 	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
 	<option value=""></option>
@@ -58,9 +58,9 @@
 </div>
 
 <div id="Products" class="tabcontent">
-  <h3>Your targeted products</h3>
-  <p>We preselected products based on your restrictions.</p>
-	 Choose items to buy:
+  <h3>Available products</h3>
+  <p>We filtered products based on your personal preferences.</p>
+	 Select any items you wish to purchase:
 	 <div id="displayProduct"></div>
 	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
 		Add selected items to cart.
@@ -69,13 +69,13 @@
 
 <div id="Cart" class="tabcontent">
   <h3>Cart</h3>
-  <p>Here is your cart.</p>
+  <p>Here are the items in your cart</p>
   <div id="displayCart"></div>
 </div>
 
 <script src="scripts/groceries.js"></script>
 <script src="scripts/main.js"></script>
-<p id="signature">Thank you for you shopping with us! 
+<p id="signature">Thank you for you shopping with HOCO Online Grocery Shop! 
    <br> This Site created by Geshanth Krishnapillai, Gavin Gao, and Marcus Dillon</p>
 </body>
 </html>
