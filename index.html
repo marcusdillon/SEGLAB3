@@ -14,12 +14,19 @@
   <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
   <button class="tablinks" onclick="openInfo(event, 'Cart')">My Cart</button>
 </div>
+
 	
-<div class="pill-nav">
-  <a class="client" href="#client">Client</a>
-  <a href="#products">Products</a>
-  <a href="#cart">My Cart</a>
-</div>
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a href="#personal" class="nav-link active" data-bs-toggle="tab">Personal</a>
+    </li>
+    <li class="nav-item">
+        <a href="#products" class="nav-link" data-bs-toggle="tab">Products</a>
+    </li>
+    <li class="nav-item">
+        <a href="#cart" class="nav-link" data-bs-toggle="tab">My Cart</a>
+    </li>
+</ul>
 	
 <!-- Tab content -->
 <div id="Client" class="tabcontent">
